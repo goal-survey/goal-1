@@ -21,9 +21,15 @@ bootstrap https://getbootstrap.com/
 
 ## Goal Group :: 
 1-Abdel Rahman Musa -S
+
 2-Turkyeh Abo Kharmh -p
+
 3-Abdullah Hussein -QA
+
 4-Noor shatnawi
+
 5-Rama Jaradat 
+
 6-Abeer Yahya
+
 7-Omar Alomari
