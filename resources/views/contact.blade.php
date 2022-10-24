@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  	<title>Contact Form 02</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    @extends('layouts.main')
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="css/style.css">
 
-	</head>
-    @extends('layouts.main')
+
 	<body>
 	<section class="ftco-section">
 		<div class="container">
@@ -31,7 +25,18 @@
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
 				      		</div>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+
+							  @if(Session::has('success'))
+							  <div class="alert alert-success">
+								  {{ Session::get('success') }}
+								  @php
+									  Session::forget('success');
+								  @endphp
+							  </div>
+							  @endif
+							  
+									<form action="/contact-form" method="POST" id="contactForm" name="contactForm" class="contactForm">
+										@csrf
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
@@ -59,6 +64,7 @@
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
+													{{-- <button type="submit" class="btn btn-primary">Send Message</button> --}}
 													<input type="submit" value="Send Message" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
@@ -112,11 +118,11 @@
 		</div>
 	</section>
 
-	<script src="js/jquery.min.js"></script>
+	{{-- <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script> --}}
 
 	</body>
 </html>

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('infos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->references('id')->on('users');
             $table->integer('age');
             $table->string('edu_level');
             $table->string('city');

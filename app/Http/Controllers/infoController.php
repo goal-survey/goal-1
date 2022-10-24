@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\info;
+use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use PhpParser\Node\Expr\New_;
+use Illuminate\Support\Facades\Auth;
+use Psy\CodeCleaner\UseStatementPass;
 
 class infoController extends Controller
 {
@@ -16,8 +18,16 @@ class infoController extends Controller
      */
     public function index()
     {
-        //
+        // get all user table data
+        $user = Auth::user();
+
+        // get all info table data
+        $info = info::where('user_id', $user->id)->get();
+
+        return view('profile', ['user' => $user, 'info' => $info[0]]);
     }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -26,9 +36,6 @@ class infoController extends Controller
      */
     public function create()
     {
-        
-
-
     }
 
     /**
@@ -39,7 +46,7 @@ class infoController extends Controller
      */
     public function store(Request $request)
     {
-        $info= new Info;
+        $info = new Info;
         $request->validate([
             'age' => ['required', 'string', 'max:255'],
             'edu_level' => ['required', 'string', 'max:255'],
@@ -48,16 +55,10 @@ class infoController extends Controller
         $info->age = $request->age;
         $info->edu_level = $request->edu_level;
         $info->city = $request->city;
-        $info->user_id=Auth::user()->id;
+        $info->user_id = Auth::user()->id;
         $info->save();
         return redirect('/');
     }
-   
-
-
-
-
-
 
 
 
@@ -79,9 +80,15 @@ class infoController extends Controller
      * @param  \App\Models\info  $info
      * @return \Illuminate\Http\Response
      */
-    public function edit(info $info)
+    public function edit($id)
     {
-        //
+        // dd($info);
+        // get all user table data
+        $user = User::find($id);
+        // get all info table data
+        $info = info::where('user_id', $user->id)->get();
+
+        return view('editprofile', ['user' => $user, 'info' => $info[0]]);
     }
 
     /**
@@ -91,9 +98,21 @@ class infoController extends Controller
      * @param  \App\Models\info  $info
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, info $info)
+    public function update(Request $request, $id)
     {
-        //
+        // dd($request);
+        User::where('id', $id)->update([
+            "name" => $request->name,
+            "email" => $request->email,
+        ]);
+
+        info::where('user_id', $id)->update([
+            "age" => $request->age,
+            "edu_level" => $request->edu_level,
+            "city" => $request->city
+        ]);
+
+        return redirect('/profile');
     }
 
     /**

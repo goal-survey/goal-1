@@ -60,16 +60,16 @@
         <h1 class="text-center text-white w-lg-75 mx-auto fs-xl-6 fs-lg-4 fs-3">Best choice to get the best service</h1>
         <div class="row mt-5">
           <div class="col-md-4 col-sm-6 text-center">
-            <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">100%</h1>
+            <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">99%</h1>
             <p class="text-light fs-2">credibility</p>
           </div>
           <div class="col-md-4 col-sm-6 text-center">
-            <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">0</h1>
+            <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">1630</h1>
             {{-- add a counter of visetor here  --}}
             <p class="text-light fs-2">number of visitors</p>
           </div>
           <div class="col-md-4 col-sm-6 text-center">
-            <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">0</h1>
+            <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">1110</h1>
                           {{-- add a number of resolutionsr here  --}}
 
             <p class="text-light fs-2">number of resolutions</p>
@@ -139,25 +139,4 @@ Where conditions, age group and time are taken into account.</p>
 
   <!-- ============================================-->
   <!-- <section> begin ============================-->
-  <section>
-
-    <div class="container bg-dark overflow-hidden rounded-1">
-      <div class="bg-holder" style="background-image:url(assets/img/promo/promo-bg.png);">
-      </div>
-      <!--/.bg-holder-->
-
-      <div class="px-5 py-7 position-relative">
-        <h1 class="text-center w-lg-75 mx-auto fs-lg-6 fs-md-4 fs-3 text-white">Would you like to be notified of the latest surveys available to us?</h1>
-        <div class="row justify-content-center mt-5">
-          <div class="col-auto w-100 w-lg-50">
-            <input class="form-control mb-2 border-light fs-1" type="email" placeholder="Your email address" />
-          </div>
-          <div class="col-auto mt-2 mt-lg-0">
-            <button class="btn btn-success text-dark fs-1">Start now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of .container-->
-
-  </section>
+  

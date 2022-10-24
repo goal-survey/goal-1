@@ -41,10 +41,6 @@ return [
             'provider' => 'users',
         ],
         
-    'webowner' => [
-        'driver' => 'session',
-        'provider' => 'owners',
-    ],
     ],
 
     /*
@@ -70,10 +66,7 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        'owners' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Owner::class,
-        ],
+
     ],
 
     /*
@@ -98,12 +91,7 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
-        'owners' => [
-            'provider' => 'owners',
-            'table' => 'password_resets',
-            'expire' => 60,
-            'throttle' => 60,
-        ],
+
     ],
 
     /*

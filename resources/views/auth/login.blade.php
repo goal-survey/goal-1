@@ -18,7 +18,7 @@
             <div>
                 <x-input-label for="email" :value="__('Email')" />
 
-                <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+                <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" style="border-radius:5rem ;padding:1rem 1.8rem" required autofocus />
 
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
@@ -30,7 +30,7 @@
                 <x-text-input id="password" class="block mt-1 w-full"
                                 type="password"
                                 name="password"
-                                required autocomplete="current-password" />
+                                required autocomplete="current-password" style="border-radius:5rem ;padding:1rem 1.8rem" />
 
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
             </div>
@@ -45,19 +45,18 @@
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 mx-4" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
 
-                <x-primary-button class="ml-3">
-                    {{ __('Log in') }}
-                </x-primary-button>
+                <button class="btn btn-primary" style="background-color:#01d28e" type="submit">{{ __('Log in') }}</button>
+
+ 
             </div>
         </form>
     </x-auth-card>
 </x-guest-layout>
   
 @endsection
-
 

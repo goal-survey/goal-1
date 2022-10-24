@@ -60,6 +60,8 @@
         background-image: $icon;
         background-repeat: no-repeat;
         background-position: center right $input-height-inner-quarter;
+        border-radius: 5rem;
+
         background-size: $input-height-inner-half $input-height-inner-half;
       }
 

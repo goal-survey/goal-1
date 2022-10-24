@@ -7,7 +7,7 @@
           <h1 class="text-center fs-lg-7 fs-md-4 fs-3 text-dark mt-3">One step to begin</h1>
         </div>
           <div class="row align-items-center gx-xl-7">
-              <form action="/store" method="post">
+              <form action="/storeinfo" method="post">
                 @csrf
 
                   <div class="container mt-5">

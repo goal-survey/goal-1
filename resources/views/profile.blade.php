@@ -19,8 +19,10 @@
                                         <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
                                             alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
                                         <div class="mt-5">
-                                            <h4 class="mb-5">John Doe</h4>                                                                                                       
-                                            <button class="btn btn-primary mb-4">Edit</button>                                                    
+                                            {{-- {{dd($info);}}  --}}
+                                            <h4 class="mb-5">{{$user['name']}}</h4>  
+                                                                                                                                                
+                                           <a href="editprofile/{{$user['id']}}"> <button class="btn btn-primary mb-4">Edit</button></a>                                                    
                                             <button class="btn btn-outline-primary" style="color:#0d263f;"
                                             >Logout</button>
                                         </div>
@@ -37,7 +39,7 @@
                                             <h6 class="mt-3">Full Name</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <label for="full_name" class="form-control">John Doe</label>
+                                            <label for="full_name" class="form-control">{{$user['name']}}</label>
                                             {{-- <input type="text" class="form-control" value="John Doe"> --}}
                                         </div>
                                     </div>
@@ -46,27 +48,25 @@
                                             <h6 class="mt-3">Email</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <label for="email" class="form-control">john@example.com</label>
-                                            {{-- <input type="text" class="form-control"
-                                                value="john@example.com"> --}}
+                                            <label for="email" class="form-control">{{$user['email']}}</label>
+                                           
                                         </div>
                                     </div>
-                                    <div class="row mb-0">
+                                    {{-- <div class="row mb-0">
                                         <div class="col-sm-3">
                                             <h6 class="mt-3">Phone</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <label for="phone" class="form-control">(239) 816-9029</label>
-                                            {{-- <input type="text" class="form-control"
-                                                value="(239) 816-9029"> --}}
+                                            <label for="phone" class="form-control">{{$user['phone']}}</label>
+                                           
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="row mb-0">
                                         <div class="col-sm-3">
                                             <h6 class="mt-3">Age</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <label for="age" class="form-control">65</label>
+                                            <label for="age" class="form-control">{{$info['age']}}</label>
                                             {{-- <input type="text" class="form-control"
                                                 value="(320) 380-4539"> --}}
                                         </div>
@@ -76,7 +76,7 @@
                                             <h6 class="mt-3">Education Level</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <label for="edu_level" class="form-control">Orange Academy</label>
+                                            <label for="edu_level" class="form-control">{{$info['edu_level']}}</label>
                                             {{-- <input type="text" class="form-control"
                                                 value="Bay Area, San Francisco, CA"> --}}
                                         </div>
@@ -86,7 +86,7 @@
                                             <h6 class="mt-3">City</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <label for="city" class="form-control">Amman</label>
+                                            <label for="city" class="form-control">{{$info['city']}}</label>
                                             {{-- <input type="text" class="form-control"
                                                 value="Bay Area, San Francisco, CA"> --}}
                                         </div>

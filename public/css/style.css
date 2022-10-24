@@ -8216,12 +8216,12 @@ textarea.form-control {
   background: #fff; }
 
 .info-wrap {
-  color: rgba(#536468); }
+  color: rgba(#fff); }
   .info-wrap h3 {
-    color: #536468; }
+    color: #fff; }
   .info-wrap .dbox {
     width: 100%;
-    color:  #536468;
+    color:  #fff;
     margin-bottom: 25px; }
     .info-wrap .dbox:last-child {
       margin-bottom: 0; }
@@ -8229,9 +8229,9 @@ textarea.form-control {
       margin-bottom: 0; }
       .info-wrap .dbox p span {
         font-weight: 500;
-        color: #536468; }
+        color: #fff; }
       .info-wrap .dbox p a {
-        color: #536468; }
+        color: #fff; }
     .info-wrap .dbox .icon {
       width: 50px;
       height: 50px;
@@ -8285,7 +8285,7 @@ textarea.form-control {
 .contactForm .form-control {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0; }
+ }
 
 #contactForm .error {
   color: red;
