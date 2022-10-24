@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/PDKqg1x/00Logo.png"(https://i.ibb.co/PDKqg1x/00Logo.png)" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.postimg.cc/GhdhtxqV/goal-low-resolution-logo-color-on-transparent-background.png"(https://i.ibb.co/PDKqg1x/00Logo.png)" width="400" alt="Laravel Logo"></a></p>
 
 
 
