@@ -19,7 +19,7 @@ bootstrap
     
 ##[Trello Link]( https://trello.com/b/BK4snRrr/laravel-project?search_id=db8db4fb-21aa-4694-87db-3bcd229de210)
 
-##[Wireframe & Mockup](shorturl.at/mwGIP)
+##[Wireframe & Mockup](https://www.figma.com/file/JkV5o7TnKiN3va2sF0AKvs/Untitled?node-id=0%3A1)
 
 
 ## Goal Group :: 
