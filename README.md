@@ -8,16 +8,18 @@ Goal is a web application created to help anyone looking for a specific feasibil
 
 ## materials 
 languages and tools Used in this Project :
+    
 Laravel 
 PHP
 Javascript
 CSS
 HTML
-bootstrap https://getbootstrap.com/
+bootstrap
 
 ## trello link :: https://trello.com/b/BK4snRrr/laravel-project?search_id=db8db4fb-21aa-4694-87db-3bcd229de210
+    
 
-## Figma link :: Untitled (1).pdf https://www.figma.com/file/JkV5o7TnKiN3va2sF0AKvs/Untitled?node-id=0%3A1
+## Figma link :: https://www.figma.com/file/JkV5o7TnKiN3va2sF0AKvs/Untitled?node-id=0%3A1
 
 ## Goal Group :: 
 1-Abdel Rahman Musa -S
